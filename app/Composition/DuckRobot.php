@@ -8,7 +8,7 @@ use App\Composition\Interfaces\CleanableInterface;
 use App\Composition\Interfaces\DuckRobotLikeInterface;
 use App\Composition\Interfaces\QuackableInterface;
 
-class ComposedDuckRobot implements DuckRobotLikeInterface
+class DuckRobot implements DuckRobotLikeInterface
 {
 
     /**
@@ -37,7 +37,7 @@ class ComposedDuckRobot implements DuckRobotLikeInterface
      */
     public function quack(): string
     {
-        $this->quackBehaviour->quack();
+        return $this->quackBehaviour->quack();
     }
 
     /**
@@ -45,6 +45,6 @@ class ComposedDuckRobot implements DuckRobotLikeInterface
      */
     public function clean(): string
     {
-        $this->cleanBehaviour->clean();
+        return $this->cleanBehaviour->clean();
     }
 }

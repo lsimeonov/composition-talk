@@ -5,7 +5,7 @@ use App\Composition\Interfaces\DuckLikeInterface;
 use App\Composition\Interfaces\FlyableInterface;
 use App\Composition\Interfaces\QuackableInterface;
 
-class ComposedDuck implements DuckLikeInterface
+class Duck implements DuckLikeInterface
 {
 
 
@@ -18,18 +18,16 @@ class ComposedDuck implements DuckLikeInterface
      */
     private $quackBehaviour;
 
+    /**
+     * ComposedDuck constructor.
+     *
+     * @param \App\Composition\Interfaces\FlyableInterface $flyBehaviour
+     * @param \App\Composition\Interfaces\QuackableInterface $quackBehaviour
+     */
     public function __construct(FlyableInterface $flyBehaviour, QuackableInterface $quackBehaviour)
     {
         $this->flyBehaviour = $flyBehaviour;
         $this->quackBehaviour = $quackBehaviour;
-    }
-
-    /**
-     * @return string
-     */
-    public function swim(): string
-    {
-        return 'Swim Swam';
     }
 
     /**

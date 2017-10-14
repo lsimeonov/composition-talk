@@ -4,8 +4,13 @@
 namespace App\Inheritance;
 
 
-class Bird
+class Duck
 {
+    public function quack()
+    {
+        return 'Quack';
+    }
+
     /**
      * @return string
      */

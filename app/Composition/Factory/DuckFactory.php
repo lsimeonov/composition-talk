@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Factories;
+namespace App\Composition\Factory;
 
-use App\Composition\ComposedDuck;
+use App\Composition\Duck;
 use App\Composition\Implementation\Flyable\CannotFly;
 use App\Composition\Implementation\Flyable\FlyWithWings;
 use App\Composition\Implementation\Flyable\RocketPower;
@@ -23,7 +23,7 @@ class DuckFactory
     /**
      * @param \App\Model\Duck $duck
      *
-     * @return \App\Composition\ComposedDuck
+     * @return \App\Composition\Duck
      * @throws \Exception
      */
     public function create(DuckModel $duck): DuckLikeInterface
@@ -31,7 +31,7 @@ class DuckFactory
         $flyBehaviour = $this->findFlyBehaviour($duck);
         $quackBehaviour = $this->findQuackBehaviour($duck);
 
-        return new ComposedDuck($flyBehaviour, $quackBehaviour);
+        return new Duck($flyBehaviour, $quackBehaviour);
     }
 
     /**

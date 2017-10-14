@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Factories\DuckFactory;
+use App\Composition\Factory\DuckFactory;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
