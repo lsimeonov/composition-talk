@@ -45,4 +45,20 @@ class Duck implements DuckLikeInterface
     {
         return $this->quackBehaviour->quack();
     }
+
+    /**
+     * @param \App\Composition\Interfaces\FlyableInterface $flyBehaviour
+     */
+    public function setFlyBehaviour(\App\Composition\Interfaces\FlyableInterface $flyBehaviour)
+    {
+        $this->flyBehaviour = $flyBehaviour;
+    }
+
+    /**
+     * @param \App\Composition\Interfaces\QuackableInterface $quackBehaviour
+     */
+    public function setQuackBehaviour(\App\Composition\Interfaces\QuackableInterface $quackBehaviour)
+    {
+        $this->quackBehaviour = $quackBehaviour;
+    }
 }

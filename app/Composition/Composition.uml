@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\Composition\Duck</OriginalElement>
+  <nodes>
+    <node x="875.5" y="202.0">\App\Composition\DuckRobot</node>
+    <node x="190.0" y="0.0">\App\Composition\Interfaces\FlyableInterface</node>
+    <node x="385.99999999999994" y="112.0">\App\Composition\Interfaces\DuckLikeInterface</node>
+    <node x="547.0" y="101.0">\App\Composition\Implementation\Quackable\Quack</node>
+    <node x="268.99999999999994" y="101.0">\App\Composition\Implementation\Flyable\CannotFly</node>
+    <node x="287.4999999999999" y="202.0">\App\Composition\Duck</node>
+    <node x="670.5" y="0.0">\App\Composition\Interfaces\QuackableInterface</node>
+    <node x="1296.0" y="101.0">\App\Composition\Implementation\Cleanable\SlowClean</node>
+    <node x="1162.0" y="101.0">\App\Composition\Implementation\Cleanable\QuickClean</node>
+    <node x="686.0" y="101.0">\App\Composition\Implementation\Quackable\Mute</node>
+    <node x="0.0" y="101.0">\App\Composition\Implementation\Flyable\RocketPower</node>
+    <node x="964.0" y="112.0">\App\Composition\Interfaces\DuckRobotLikeInterface</node>
+    <node x="132.0" y="101.0">\App\Composition\Implementation\Flyable\FlyWithWings</node>
+    <node x="825.0" y="101.0">\App\Composition\Implementation\Quackable\DuckCall</node>
+    <node x="1146.5" y="0.0">\App\Composition\Interfaces\CleanableInterface</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Composition\Interfaces\DuckRobotLikeInterface" target="\App\Composition\Interfaces\QuackableInterface">
+      <point x="-44.5" y="-14.5" />
+      <point x="1008.5" y="71.0" />
+      <point x="805.5" y="71.0" />
+      <point x="60.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Quackable\DuckCall" target="\App\Composition\Interfaces\QuackableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="884.5" y="81.0" />
+      <point x="775.5" y="81.0" />
+      <point x="30.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Interfaces\DuckRobotLikeInterface" target="\App\Composition\Interfaces\CleanableInterface">
+      <point x="44.5" y="-14.5" />
+      <point x="1097.5" y="81.0" />
+      <point x="1170.6666666666667" y="81.0" />
+      <point x="-48.33333333333326" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Duck" target="\App\Composition\Interfaces\DuckLikeInterface">
+      <point x="5.6843418860808015E-14" y="-92.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Cleanable\QuickClean" target="\App\Composition\Interfaces\CleanableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Interfaces\DuckLikeInterface" target="\App\Composition\Interfaces\QuackableInterface">
+      <point x="35.25000000000006" y="-14.5" />
+      <point x="491.75" y="71.0" />
+      <point x="685.5" y="71.0" />
+      <point x="-60.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Interfaces\DuckLikeInterface" target="\App\Composition\Interfaces\FlyableInterface">
+      <point x="-35.24999999999994" y="-14.5" />
+      <point x="421.25" y="71.0" />
+      <point x="302.0" y="71.0" />
+      <point x="48.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Flyable\RocketPower" target="\App\Composition\Interfaces\FlyableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="56.0" y="71.0" />
+      <point x="206.0" y="71.0" />
+      <point x="-48.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Quackable\Quack" target="\App\Composition\Interfaces\QuackableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="606.5" y="81.0" />
+      <point x="715.5" y="81.0" />
+      <point x="-30.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Cleanable\SlowClean" target="\App\Composition\Interfaces\CleanableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="1353.0" y="81.0" />
+      <point x="1267.3333333333333" y="81.0" />
+      <point x="48.33333333333326" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Quackable\Mute" target="\App\Composition\Interfaces\QuackableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Flyable\CannotFly" target="\App\Composition\Interfaces\FlyableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="317.49999999999994" y="81.0" />
+      <point x="270.0" y="81.0" />
+      <point x="16.0" y="25.5" />
+    </edge>
+    <edge source="\App\Composition\DuckRobot" target="\App\Composition\Interfaces\DuckRobotLikeInterface">
+      <point x="0.0" y="-92.5" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="\App\Composition\Implementation\Flyable\FlyWithWings" target="\App\Composition\Interfaces\FlyableInterface">
+      <point x="0.0" y="-25.5" />
+      <point x="190.5" y="81.0" />
+      <point x="238.0" y="81.0" />
+      <point x="-16.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6053748231966054" x="697.0" y="194.0" />
+  <SelectedNodes>
+    <node>\App\Composition\Duck</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

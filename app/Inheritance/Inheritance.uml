@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>PHP</ID>
+  <OriginalElement>\App\Inheritance\Duck</OriginalElement>
+  <nodes>
+    <node x="101.35714285714289" y="145.0">\App\Inheritance\Ducks\RocketPoweredMuteDuck</node>
+    <node x="499.5625" y="123.0">\App\Inheritance\Ducks\RobotDuck</node>
+    <node x="425.5" y="-38.0">\App\Inheritance\Duck</node>
+    <node x="633.5625" y="134.0">\App\Inheritance\Ducks\MuteDuck</node>
+    <node x="0.0" y="11.0">\App\Inheritance\Traits\MuteTrait</node>
+    <node x="139.00000000000003" y="11.0">\App\Inheritance\Traits\RocketPowersTrait</node>
+    <node x="321.5625" y="134.0">\App\Inheritance\Ducks\RocketPoweredDuck</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="\App\Inheritance\Ducks\RocketPoweredDuck" target="\App\Inheritance\Duck">
+      <point x="0.0" y="-25.5" />
+      <point x="400.5625" y="103.0" />
+      <point x="469.125" y="103.0" />
+      <point x="-14.875" y="36.5" />
+    </edge>
+    <edge source="\App\Inheritance\Ducks\MuteDuck" target="\App\Inheritance\Duck">
+      <point x="0.0" y="-25.5" />
+      <point x="693.0625" y="93.0" />
+      <point x="528.625" y="93.0" />
+      <point x="44.625" y="36.5" />
+    </edge>
+    <edge source="\App\Inheritance\Ducks\RocketPoweredMuteDuck" target="\App\Inheritance\Duck">
+      <point x="63.0" y="-14.5" />
+      <point x="258.8571428571429" y="93.0" />
+      <point x="439.375" y="93.0" />
+      <point x="-44.625" y="36.5" />
+    </edge>
+    <edge source="\App\Inheritance\Ducks\RobotDuck" target="\App\Inheritance\Duck">
+      <point x="0.0" y="-36.5" />
+      <point x="556.5625" y="103.0" />
+      <point x="498.875" y="103.0" />
+      <point x="14.875" y="36.5" />
+    </edge>
+    <edge source="\App\Inheritance\Ducks\RocketPoweredMuteDuck" target="\App\Inheritance\Traits\MuteTrait">
+      <point x="-63.0" y="-14.5" />
+      <point x="132.8571428571429" y="103.0" />
+      <point x="59.5" y="103.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="\App\Inheritance\Ducks\RocketPoweredMuteDuck" target="\App\Inheritance\Traits\RocketPowersTrait">
+      <point x="0.0" y="-14.5" />
+      <point x="195.8571428571429" y="103.0" />
+      <point x="212.50000000000003" y="103.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="379.0" y="98.0" />
+  <SelectedNodes>
+    <node>\App\Inheritance\Duck</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constants</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

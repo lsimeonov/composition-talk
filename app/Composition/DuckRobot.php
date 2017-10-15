@@ -47,4 +47,20 @@ class DuckRobot implements DuckRobotLikeInterface
     {
         return $this->cleanBehaviour->clean();
     }
+
+    /**
+     * @param \App\Composition\Interfaces\QuackableInterface $quackBehaviour
+     */
+    public function setQuackBehaviour(\App\Composition\Interfaces\QuackableInterface $quackBehaviour)
+    {
+        $this->quackBehaviour = $quackBehaviour;
+    }
+
+    /**
+     * @param \App\Composition\Interfaces\CleanableInterface $cleanBehaviour
+     */
+    public function setCleanBehaviour(\App\Composition\Interfaces\CleanableInterface $cleanBehaviour)
+    {
+        $this->cleanBehaviour = $cleanBehaviour;
+    }
 }
